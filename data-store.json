@@ -1,0 +1,556 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Understanding Before Remedies: Reclaiming Classical Vastu From Modern Superstition",
+      "slug": "understanding-before-remedies",
+      "excerpt": "Why installing commercial pyramids and yantras without understanding spatial physics creates psychological dependency rather than genuine harmony.",
+      "content": "In contemporary practice, Vastu has frequently been reduced to fear-based commodification. Property owners are told that minor directional deviations will cause catastrophic failure unless they purchase expensive metallic items or tear down load-bearing walls.\n\nAt Vastu Ritam, we return to the root texts: Mayamatam, Manasara, and Samarangana Sutradhara. The ancient Acharyas were master architects, town planners, and environmental physicists. They understood solar angles, earth magnetic fluxes, prevailing wind directions, and thermodynamic air circulation.\n\nWhen we understand WHY a kitchen is placed in Agneya (South-East)—to harness ultraviolet morning rays for kitchen sanitation while preventing infrared afternoon heat from spoiling stored grains—we realize that solutions should begin with architectural intelligence, not blind panic.",
+      "featuredImage": "/hero-sanctuary.jpg",
+      "categoryId": 1,
+      "categoryName": "Classical Vastu Vidya",
+      "categorySlug": "classical-vastu-vidya",
+      "authorName": "Vastu Ritam Research Desk",
+      "status": "published",
+      "metaTitle": "Understanding Before Remedies: Classical Vastu vs Superstition",
+      "metaDescription": "Reclaiming authentic classical Vastu principles from fear-driven commercial remedies.",
+      "readingTimeMinutes": 7,
+      "viewsCount": 420,
+      "publishedAt": "2026-10-08T06:12:08.593Z",
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z",
+      "topics": [
+        {
+          "id": 1,
+          "name": "Vastu Purusha Mandala",
+          "slug": "vastu-purusha-mandala"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The Brahmasthana: The Luminous Heart of Spatial Architecture",
+      "slug": "the-brahmasthana-luminous-heart",
+      "excerpt": "An analytical study of central void spaces in traditional Indian courtyards and their thermodynamic cooling efficacy.",
+      "content": "The Brahmasthana represents the geometric and energetic center of any built form. In traditional Indian domestic architecture, known as Nalukettu in Kerala, Wada in Maharashtra, or Haveli in Rajasthan, this space was left open to the sky as a central courtyard (Angana).\n\nModern environmental engineering now validates what classical texts stated thousands of years ago: the open center creates a natural stack effect. As ambient indoor air warms up during daytime occupancy, it rises and escapes through the central courtyard, drawing cool air from perimeter shaded gardens.\n\nWhen modern developers place elevator shafts, heavy RCC shear walls, or drainage stacks in this exact center, both acoustic tranquility and thermal airflow are severely compromised.",
+      "featuredImage": "/heaven-portal.jpg",
+      "categoryId": 3,
+      "categoryName": "Architectural Harmony",
+      "categorySlug": "architectural-harmony",
+      "authorName": "Ph.D. Research Scholar",
+      "status": "published",
+      "metaTitle": "The Brahmasthana: The Luminous Heart of Spatial Architecture",
+      "metaDescription": "Thermodynamics, courtyard design, and cosmic center of classical dwellings.",
+      "readingTimeMinutes": 9,
+      "viewsCount": 310,
+      "publishedAt": "2026-10-08T06:12:08.593Z",
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z",
+      "topics": [
+        {
+          "id": 2,
+          "name": "Brahmasthana",
+          "slug": "brahmasthana"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The Geometry of the Mandala: The 81-Grid Paramashayika Explained",
+      "slug": "the-geometry-of-the-mandala",
+      "excerpt": "Deconstructing the mathematical allocations of 45 deities within the sacred architectural matrix.",
+      "content": "The Paramashayika Mandala is an 81-square grid (9x9) utilized for residential and municipal planning. Within this grid, 32 deities occupy the external perimeter (Padadevatas) governing environmental interfaces, while 13 deities govern internal sectors.\n\nEach deity corresponds to a specific qualitative energy of nature. For instance, Parjanya represents rain and gentle moisture, Varuna represents oceanic depths and liquidity, and Yama represents disciplined mortality and resting cycles. Understanding these allocations allows contemporary architects to align functional programming (HVAC, server rooms, bedrooms, water storage) with classical energetic alignments.",
+      "featuredImage": "/palm-leaf-texture.jpg",
+      "categoryId": 2,
+      "categoryName": "Spiritual Knowledge",
+      "categorySlug": "spiritual-knowledge",
+      "authorName": "Vastu Ritam Academic Council",
+      "status": "published",
+      "metaTitle": "The Geometry of the Mandala: 81-Grid Paramashayika",
+      "metaDescription": "Mathematical and metaphysical grid of the sacred architectural mandala.",
+      "readingTimeMinutes": 11,
+      "viewsCount": 535,
+      "publishedAt": "2026-10-08T06:12:08.593Z",
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z",
+      "topics": [
+        {
+          "id": 1,
+          "name": "Vastu Purusha Mandala",
+          "slug": "vastu-purusha-mandala"
+        }
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "Vastu Purusha Mandala",
+      "slug": "vastu-purusha-mandala",
+      "sanskritName": "वास्तु पुरुष मण्डल",
+      "entityType": "concept",
+      "summary": "The metaphysical cosmic diagram and spatial grid upon which all sacred and domestic architecture is planned.",
+      "description": "The Vastu Purusha Mandala is the foundational grid of classical architectural design, integrating directional deities, elemental energies, and cosmological geometry into building orientation.",
+      "imageUrl": "/emblem-circle.png",
+      "metaTitle": "Vastu Purusha Mandala - The Sacred Cosmic Grid",
+      "metaDescription": "Detailed explanation of the 81-grid Paramashayika and 64-grid Manduka mandalas in classical Vastu.",
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z"
+    },
+    {
+      "id": 2,
+      "name": "Brahmasthana",
+      "slug": "brahmasthana",
+      "sanskritName": "ब्रह्मस्थान",
+      "entityType": "concept",
+      "summary": "The luminous center of the dwelling or plot, governed by Lord Brahma (the creative source), representing Space/Ether.",
+      "description": "In traditional Indian architecture, the Brahmasthana is kept open to the sky as a central courtyard (Angana), facilitating natural cooling, ventilation, and meditative tranquility.",
+      "imageUrl": "/hero-sanctuary.jpg",
+      "metaTitle": "Brahmasthana - The Luminous Heart of Architecture",
+      "metaDescription": "Why the central courtyard void acts as a thermodynamic chimney and energetic center of dwellings.",
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z"
+    },
+    {
+      "id": 3,
+      "name": "Ishanya (North-East)",
+      "slug": "ishanya-north-east",
+      "sanskritName": "ईशान्य",
+      "entityType": "direction",
+      "summary": "The North-East directional quadrant ruled by Ishana, associated with the Water element and solar prana.",
+      "description": "Associated with morning ultraviolet solar rays, mental clarity, meditation rooms, and water bodies.",
+      "imageUrl": "/heaven-portal.jpg",
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z"
+    },
+    {
+      "id": 4,
+      "name": "Agneya (South-East)",
+      "slug": "agneya-south-east",
+      "sanskritName": "आग्नेय",
+      "entityType": "direction",
+      "summary": "The South-East directional quadrant ruled by Agni Deva, governing metabolic energy, culinary fire, and vigor.",
+      "description": "Governs culinary fire, electrical transformers, and metabolic vitality.",
+      "imageUrl": "/hero-sanctuary.jpg",
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z"
+    },
+    {
+      "id": 5,
+      "name": "Nairutya (South-West)",
+      "slug": "nairutya-south-west",
+      "sanskritName": "नैऋत्य",
+      "entityType": "direction",
+      "summary": "The South-West quadrant governed by Nirriti and corresponding to the Earth element, signifying stability and strength.",
+      "description": "Governs structural stability, master bedrooms, and heavy load storage.",
+      "imageUrl": "/emblem-circle.png",
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z"
+    },
+    {
+      "id": 6,
+      "name": "Vayavya (North-West)",
+      "slug": "vayavya-north-west",
+      "sanskritName": "वायव्य",
+      "entityType": "direction",
+      "summary": "The North-West quadrant ruled by Vayu and associated with the Air element, movement, and commerce.",
+      "description": "Governs air movement, finished goods dispatch, and guest accommodation.",
+      "imageUrl": "/heaven-portal.jpg",
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Classical Vastu Vidya",
+      "slug": "classical-vastu-vidya",
+      "description": "Foundational canons and architectural principles from Samarāṅgaṇa Sūtradhāra, Mayamatam, and Mānasāra.",
+      "icon": "BookOpen",
+      "metaTitle": "Classical Vastu Vidya - Ancient Architectural Shastras",
+      "metaDescription": "Explore canonical Vedic treatises, geometric proportions, and spatial harmonics from authentic manuscripts.",
+      "displayOrder": 1,
+      "articleCount": 3,
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z"
+    },
+    {
+      "id": 2,
+      "name": "Spiritual Knowledge",
+      "slug": "spiritual-knowledge",
+      "description": "Cosmic energies, presiding deities (Devatas), and metaphysical laws governing the subtle field of dwellings.",
+      "icon": "Sun",
+      "metaTitle": "Spiritual Knowledge & Metaphysical Vastu",
+      "metaDescription": "Deities, cosmic consciousness, and sacred orientation according to Vedic cosmology.",
+      "displayOrder": 2,
+      "articleCount": 1,
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z"
+    },
+    {
+      "id": 3,
+      "name": "Architectural Harmony",
+      "slug": "architectural-harmony",
+      "description": "Harmonising structural engineering, natural light, cross-ventilation, and sacred geometry.",
+      "icon": "Compass",
+      "metaTitle": "Architectural Harmony & Natural Ventilation",
+      "metaDescription": "How traditional courtyard systems and spatial orientation enhance modern building design.",
+      "displayOrder": 3,
+      "articleCount": 2,
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z"
+    },
+    {
+      "id": 4,
+      "name": "Contemporary Space Solutions",
+      "slug": "contemporary-space-solutions",
+      "description": "Non-demolition remedies, urban apartments, corporate offices, and modern interior alignments.",
+      "icon": "Building",
+      "metaTitle": "Contemporary Space Solutions & Non-Demolition Vastu",
+      "metaDescription": "Applying classical principles in modern urban apartments and commercial workspaces.",
+      "displayOrder": 4,
+      "articleCount": 2,
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "title": "Samarāṅgaṇa Sūtradhāra: The Foundations of Classical Space Planning",
+      "slug": "samarangana-sutradhara-foundations",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "videoPlatform": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ",
+      "thumbnailUrl": "/hero-sanctuary.jpg",
+      "description": "A scholarly breakdown of King Bhoja’s 11th-century encyclopedic treatise on town planning, mechanical devices, and architectural proportioning.",
+      "durationSeconds": 1540,
+      "categoryId": 1,
+      "categoryName": "Classical Vastu Vidya",
+      "categorySlug": "classical-vastu-vidya",
+      "topicId": 1,
+      "topicName": "Vastu Purusha Mandala",
+      "topicSlug": "vastu-purusha-mandala",
+      "status": "published",
+      "displayOrder": 1,
+      "viewCount": 384,
+      "isFeatured": true,
+      "publishedAt": "2026-10-08T06:12:08.593Z",
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z"
+    }
+  ],
+  "settings": {
+    "id": 1,
+    "primaryPhone": "+91 98200 18272",
+    "secondaryPhone": null,
+    "primaryEmail": "contact@vasturitam.com",
+    "consultationEmail": null,
+    "whatsappNumber": null,
+    "whatsappNotice": null,
+    "consultationTimings": null,
+    "appointmentNotice": null,
+    "youtubeUrl": null,
+    "youtubeHandle": null,
+    "twitterUrl": null,
+    "twitterHandle": null,
+    "officeAddress": null,
+    "collaborationNotice": null,
+    "logoUrl": "/custom-test-logo.png",
+    "adsensePublisherId": "ca-pub-9697854430800000",
+    "adsenseEnabled": true,
+    "adsenseAutoAds": false,
+    "createdAt": "2026-10-08T06:12:08.593Z",
+    "updatedAt": "2026-10-11T10:10:39.053Z",
+    "facebookUrl": null,
+    "facebookHandle": null,
+    "instagramUrl": null,
+    "instagramHandle": null
+  },
+  "users": [
+    {
+      "id": 1,
+      "uid": "admin_vr_master_uid",
+      "email": "admin@vasturitam.com",
+      "displayName": "Vastu Ritam Acharya",
+      "passwordHash": "$2b$10$RxFnSI0NkevXNbmCq13Zpeb/lhm2DuGPNyzTGVROHne76wAJBhsWO",
+      "role": "admin",
+      "avatarUrl": "/trademark-logo.jpg",
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z"
+    },
+    {
+      "id": 2,
+      "uid": "scholar_vr_editor_uid",
+      "email": "scholar@vasturitam.com",
+      "displayName": "Vedic Shastra Scholar",
+      "passwordHash": "$2b$10$afFgfk4idVvMkUzzTV3CCOaawN4Kxr.C7QCASjo5DT1AIOKqPibiy",
+      "role": "editor",
+      "avatarUrl": "/trademark-logo.jpg",
+      "createdAt": "2026-10-08T06:12:08.593Z",
+      "updatedAt": "2026-10-08T06:12:08.593Z"
+    }
+  ],
+  "keywords": [
+    {
+      "id": 1,
+      "name": "Vastu Vidya",
+      "slug": "vastu-vidya",
+      "description": "Classical architectural canon",
+      "createdAt": "2026-10-08T06:12:08.593Z"
+    },
+    {
+      "id": 2,
+      "name": "Brahmasthana",
+      "slug": "brahmasthana",
+      "description": "Central courtyard void",
+      "createdAt": "2026-10-08T06:12:08.593Z"
+    },
+    {
+      "id": 3,
+      "name": "Mandala",
+      "slug": "mandala",
+      "description": "Sacred spatial diagram",
+      "createdAt": "2026-10-08T06:12:08.593Z"
+    },
+    {
+      "id": 4,
+      "name": "Paramashayika",
+      "slug": "paramashayika",
+      "description": "81-square layout matrix",
+      "createdAt": "2026-10-08T06:12:08.593Z"
+    },
+    {
+      "id": 5,
+      "name": "Test Vastu Keyword",
+      "slug": "test-vastu-keyword-1791530469553",
+      "description": "Unit test keyword entry",
+      "createdAt": "2026-10-09T07:21:09.554Z"
+    }
+  ],
+  "ads": [],
+  "media": [],
+  "auditLogs": [
+    {
+      "id": 6,
+      "userId": 1,
+      "action": "UPLOAD_HANDBOOK_PDF",
+      "entityType": "HANDBOOK",
+      "entityId": "1",
+      "details": "Uploaded/replaced PDF for \"Vastu for Contemporary Architects\": custom_arch_handbook_v2.pdf (0.00 MB)",
+      "createdAt": "2026-10-11T10:38:17.790Z"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "action": "UPLOAD_HANDBOOK_PDF",
+      "entityType": "HANDBOOK",
+      "entityId": "1",
+      "details": "Uploaded/replaced PDF for \"Vastu for Contemporary Architects\": custom_arch_handbook_v2.pdf (0.00 MB)",
+      "createdAt": "2026-10-11T10:16:48.982Z"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "action": "UPLOAD_HANDBOOK_PDF",
+      "entityType": "HANDBOOK",
+      "entityId": "1",
+      "details": "Uploaded/replaced PDF for \"Vastu for Contemporary Architects\": custom_arch_handbook_v2.pdf (0.00 MB)",
+      "createdAt": "2026-10-11T10:15:51.735Z"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "action": "UPLOAD_HANDBOOK_PDF",
+      "entityType": "HANDBOOK",
+      "entityId": "1",
+      "details": "Uploaded/replaced PDF for \"Vastu for Contemporary Architects\": custom_arch_handbook_v2.pdf (0.00 MB)",
+      "createdAt": "2026-10-10T09:07:40.743Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "action": "DELETE_ARTICLE",
+      "entityType": "ARTICLE",
+      "entityId": "4",
+      "details": "Deleted article \"Test Architectural Treatise\"",
+      "createdAt": "2026-10-08T06:13:49.593Z"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "action": "CREATE_ARTICLE",
+      "entityType": "ARTICLE",
+      "entityId": "4",
+      "details": "Created article \"Test Architectural Treatise\" with status \"published\"",
+      "createdAt": "2026-10-08T06:13:39.514Z"
+    }
+  ],
+  "handbooks": [
+    {
+      "id": 1,
+      "title": "Vastu for Contemporary Architects",
+      "slug": "vastu-for-contemporary-architects",
+      "subtitle": "A Field Guide to Seamless Integration with Modern CAD & BIM Workflows",
+      "targetAudience": "Architects & Urban Planners",
+      "pages": 48,
+      "topics": [
+        "Solar Vector Mapping",
+        "Brahmasthan in Multi-Story Apartments",
+        "Façade Openings vs Dik-Bala",
+        "Non-Destructive Layout Optimization"
+      ],
+      "summary": "Written specifically for registered architects who want to respect client Vastu sentiments while preserving aesthetic integrity and building code compliance.",
+      "pdfFileName": "custom_arch_handbook_v2.pdf",
+      "pdfFilePath": "storage/handbooks/handbook_1_1791715097788_custom_arch_handbook_v2pdf.pdf",
+      "pdfFileSizeBytes": 232,
+      "isPublished": true,
+      "displayOrder": 1,
+      "createdAt": "2026-10-10T09:06:58.401Z",
+      "updatedAt": "2026-10-11T10:38:17.789Z"
+    },
+    {
+      "id": 2,
+      "title": "The Informed Homebuyer's Vastu Checklist",
+      "slug": "informed-homebuyers-vastu-checklist",
+      "subtitle": "What to Observe Before Signing Property Deeds",
+      "targetAudience": "Home Buyers & Real Estate Investors",
+      "pages": 36,
+      "topics": [
+        "Evaluating Main Entrance Pada",
+        "Slope & Drainage Verification",
+        "Surrounding Negative Structures",
+        "Separating Remediable Flaws from Critical Defects"
+      ],
+      "summary": "A transparent, easy-to-follow guide to protect your life savings from high-risk property purchases without being misled by sensationalist claims.",
+      "pdfFileName": "handbook_2_default.pdf",
+      "pdfFilePath": "storage/handbooks/handbook_2_default.pdf",
+      "pdfFileSizeBytes": 13734,
+      "isPublished": true,
+      "displayOrder": 2,
+      "createdAt": "2026-10-10T09:06:58.401Z",
+      "updatedAt": "2026-10-10T09:06:58.405Z"
+    },
+    {
+      "id": 3,
+      "title": "Industrial & Factory Spatial Harmonics",
+      "slug": "industrial-factory-spatial-harmonics",
+      "subtitle": "Aligning Heavy Machinery, Substations, and Inventory Logistics",
+      "targetAudience": "Plant Managers & Civil Engineers",
+      "pages": 54,
+      "topics": [
+        "Earth-Bearing Capacity in Nairutya",
+        "Hazardous Chemical Storage in Agni",
+        "Raw Material Inflow vs Finished Goods Outflow",
+        "Workforce Well-being"
+      ],
+      "summary": "A practical technical treatise for manufacturing facilities, warehouse logistics, and corporate processing plants.",
+      "pdfFileName": "handbook_3_default.pdf",
+      "pdfFilePath": "storage/handbooks/handbook_3_default.pdf",
+      "pdfFileSizeBytes": 13710,
+      "isPublished": true,
+      "displayOrder": 3,
+      "createdAt": "2026-10-10T09:06:58.401Z",
+      "updatedAt": "2026-10-10T09:06:58.406Z"
+    }
+  ],
+  "handbookLeads": [
+    {
+      "id": 8,
+      "handbookId": "2",
+      "handbookTitle": "The Informed Homebuyer's Vastu Checklist",
+      "fullName": "Dr. Meera Iyer",
+      "email": "meera.iyer@heritage.org",
+      "phone": "9820045678",
+      "accessToken": "eyJoSWQiOiIyIiwiZW1haWwiOiJtZWVyYS5peWVyQGhlcml0YWdlLm9yZyIsImV4cCI6MTc5MTg4Nzg5Nzc0M30.0kAj5PooB0C_IUrof60mLJ5LWHQGS47oI4CfEseGmuM",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "node",
+      "createdAt": "2026-10-11T10:38:17.744Z"
+    },
+    {
+      "id": 7,
+      "handbookId": "1",
+      "handbookTitle": "Vastu for Contemporary Architects",
+      "fullName": "Ar. Rajesh Sharma",
+      "email": "rajesh.sharma@architects.in",
+      "phone": "+91 98200 18272",
+      "accessToken": "eyJoSWQiOiIxIiwiZW1haWwiOiJyYWplc2guc2hhcm1hQGFyY2hpdGVjdHMuaW4iLCJleHAiOjE3OTE4ODc4OTc3MjR9.qzRTGnXKlynM1qz6W_k_jJo_1fYA1kNOZ9SwLbylInk",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "node",
+      "createdAt": "2026-10-11T10:38:17.725Z"
+    },
+    {
+      "id": 6,
+      "handbookId": "2",
+      "handbookTitle": "The Informed Homebuyer's Vastu Checklist",
+      "fullName": "Dr. Meera Iyer",
+      "email": "meera.iyer@heritage.org",
+      "phone": "9820045678",
+      "accessToken": "eyJoSWQiOiIyIiwiZW1haWwiOiJtZWVyYS5peWVyQGhlcml0YWdlLm9yZyIsImV4cCI6MTc5MTg4NjYwODk0OH0.Zs-aJ8GLaIZZ6nvoPkJPna08EA59vUFleLvaj4aBK5k",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "node",
+      "createdAt": "2026-10-11T10:16:48.948Z"
+    },
+    {
+      "id": 5,
+      "handbookId": "1",
+      "handbookTitle": "Vastu for Contemporary Architects",
+      "fullName": "Ar. Rajesh Sharma",
+      "email": "rajesh.sharma@architects.in",
+      "phone": "+91 98200 18272",
+      "accessToken": "eyJoSWQiOiIxIiwiZW1haWwiOiJyYWplc2guc2hhcm1hQGFyY2hpdGVjdHMuaW4iLCJleHAiOjE3OTE4ODY2MDg5MjF9.gj25o0ia00Iq9TgT6Kqv6oTaTO8QWyEWoqkOjgmXO5A",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "node",
+      "createdAt": "2026-10-11T10:16:48.921Z"
+    },
+    {
+      "id": 4,
+      "handbookId": "1",
+      "handbookTitle": "Vastu for Contemporary Architects",
+      "fullName": "Dr. Meera Iyer",
+      "email": "meera.iyer@heritage.org",
+      "phone": "9820045678",
+      "accessToken": "eyJoSWQiOiIxIiwiZW1haWwiOiJtZWVyYS5peWVyQGhlcml0YWdlLm9yZyIsImV4cCI6MTc5MTg4NjU1MTY2Mn0.gjcbmK0BnDnHvjd024ZKlkkh19aT4ozhNOxP_6OVL4o",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "node",
+      "createdAt": "2026-10-11T10:15:51.662Z"
+    },
+    {
+      "id": 3,
+      "handbookId": "1",
+      "handbookTitle": "Vastu for Contemporary Architects",
+      "fullName": "Ar. Rajesh Sharma",
+      "email": "rajesh.sharma@architects.in",
+      "phone": "+91 98200 18272",
+      "accessToken": "eyJoSWQiOiIxIiwiZW1haWwiOiJyYWplc2guc2hhcm1hQGFyY2hpdGVjdHMuaW4iLCJleHAiOjE3OTE4ODY1NTE2NDJ9.sdC0ftunoYoBnY6UCSQ8j6y_830MB-SrH_jeu0_j-Ro",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "node",
+      "createdAt": "2026-10-11T10:15:51.642Z"
+    },
+    {
+      "id": 2,
+      "handbookId": "1",
+      "handbookTitle": "Vastu for Contemporary Architects",
+      "fullName": "Dr. Meera Iyer",
+      "email": "meera.iyer@heritage.org",
+      "phone": "9820045678",
+      "accessToken": "eyJoSWQiOiIxIiwiZW1haWwiOiJtZWVyYS5peWVyQGhlcml0YWdlLm9yZyIsImV4cCI6MTc5MTc5NjA2MDcxNn0.4U4LDYtPQmgf4FrSOalCAqCxfly9IfAk2MDobz3oG9k",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "node",
+      "createdAt": "2026-10-10T09:07:40.716Z"
+    },
+    {
+      "id": 1,
+      "handbookId": "1",
+      "handbookTitle": "Vastu for Contemporary Architects",
+      "fullName": "Ar. Rajesh Sharma",
+      "email": "rajesh.sharma@architects.in",
+      "phone": "+91 98200 18272",
+      "accessToken": "eyJoSWQiOiIxIiwiZW1haWwiOiJyYWplc2guc2hhcm1hQGFyY2hpdGVjdHMuaW4iLCJleHAiOjE3OTE3OTYwNjA2OTl9.qvKb-aXujkCSDbEn7KWZpbUs6jnSOgepjshuIS5R5YQ",
+      "ipAddress": "127.0.0.1",
+      "userAgent": "node",
+      "createdAt": "2026-10-10T09:07:40.700Z"
+    }
+  ]
+}

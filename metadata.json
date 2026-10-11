@@ -1,0 +1,8 @@
+{
+  "name": "VASTU RITAM - Towards Harmony Through Authentic Vastu Knowledge",
+  "description": "An institution dedicated to the study, practice, research, and consultation of authentic classical Vastu knowledge for harmonious living and working spaces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

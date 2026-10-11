@@ -1,0 +1,294 @@
+// Prisma Schema for VASTU RITAM Production Knowledgebase & Advertisement Platform
+// Maps directly to PostgreSQL Cloud SQL tables, relationships, constraints, and indexes.
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  ADMIN   @map("admin")
+  EDITOR  @map("editor")
+  VIEWER  @map("viewer")
+}
+
+enum ArticleStatus {
+  DRAFT     @map("draft")
+  REVIEW    @map("review")
+  PUBLISHED @map("published")
+  ARCHIVED  @map("archived")
+}
+
+enum EntityType {
+  DEITY       @map("deity")
+  ENERGY_ZONE @map("energy_zone")
+  CONCEPT     @map("concept")
+  SHASTRA     @map("shastra")
+  DIRECTION   @map("direction")
+  RITUAL      @map("ritual")
+}
+
+enum AdPlacementType {
+  HEADER
+  ARTICLE_TOP
+  ARTICLE_MIDDLE
+  ARTICLE_BOTTOM
+  SIDEBAR
+  FOOTER
+  MOBILE
+}
+
+// 1. User & Admin Model with RBAC
+model User {
+  id           Int        @id @default(autoincrement())
+  uid          String     @unique
+  email        String     @unique
+  displayName  String?    @map("display_name")
+  passwordHash String?    @map("password_hash")
+  role         String     @default("editor") // 'admin' | 'editor' | 'viewer'
+  avatarUrl    String?    @map("avatar_url")
+  createdAt    DateTime   @default(now()) @map("created_at")
+  updatedAt    DateTime   @default(now()) @updatedAt @map("updated_at")
+
+  articles     Article[]
+  media        Media[]
+  auditLogs    AuditLog[]
+
+  @@index([email], map: "users_email_idx")
+  @@index([role], map: "users_role_idx")
+  @@map("users")
+}
+
+// 2. Canonical Knowledge Category
+model Category {
+  id              Int       @id @default(autoincrement())
+  name            String
+  slug            String    @unique
+  description     String?
+  icon            String?
+  metaTitle       String?   @map("meta_title")
+  metaDescription String?   @map("meta_description")
+  displayOrder    Int       @default(0) @map("display_order")
+  createdAt       DateTime  @default(now()) @map("created_at")
+
+  articles        Article[]
+
+  @@index([slug], map: "category_slug_idx")
+  @@map("categories")
+}
+
+// 3. Topic / Canonical Entity (Independent from articles & keywords)
+model Topic {
+  id                Int             @id @default(autoincrement())
+  name              String
+  slug              String          @unique
+  sanskritName      String?         @map("sanskrit_name")
+  entityType        String          @default("concept") @map("entity_type") // 'deity', 'energy_zone', 'concept', 'shastra'
+  summary           String
+  description       String
+  imageUrl          String?         @map("image_url")
+  metaTitle         String?         @map("meta_title")
+  metaDescription   String?         @map("meta_description")
+  createdAt         DateTime        @default(now()) @map("created_at")
+  updatedAt         DateTime        @default(now()) @updatedAt @map("updated_at")
+
+  articleTopics     ArticleTopic[]
+  outgoingRelations TopicRelation[] @relation("SourceTopicRelations")
+  incomingRelations TopicRelation[] @relation("TargetTopicRelations")
+
+  @@index([slug], map: "topic_slug_idx")
+  @@index([entityType], map: "topic_entity_type_idx")
+  @@map("topics")
+}
+
+// 4. Topic-to-Topic Inter-Entity Relationships
+model TopicRelation {
+  id            Int      @id @default(autoincrement())
+  sourceTopicId Int      @map("source_topic_id")
+  targetTopicId Int      @map("target_topic_id")
+  relationType  String   @default("related_to") @map("relation_type") // 'presides_over', 'associated_with', 'counterpart_of', 'element_ruler'
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  sourceTopic   Topic    @relation("SourceTopicRelations", fields: [sourceTopicId], references: [id], onDelete: Cascade)
+  targetTopic   Topic    @relation("TargetTopicRelations", fields: [targetTopicId], references: [id], onDelete: Cascade)
+
+  @@index([sourceTopicId], map: "topic_rel_source_idx")
+  @@index([targetTopicId], map: "topic_rel_target_idx")
+  @@map("topic_relations")
+}
+
+// 5. Taxonomy Keywords & Shastric Terms
+model Keyword {
+  id              Int              @id @default(autoincrement())
+  name            String
+  slug            String           @unique
+  usageCount      Int              @default(0) @map("usage_count")
+  createdAt       DateTime         @default(now()) @map("created_at")
+
+  articleKeywords ArticleKeyword[]
+
+  @@index([slug], map: "keyword_slug_idx")
+  @@map("keywords")
+}
+
+// 6. Knowledge Articles / Canonical Treatises
+model Article {
+  id                 Int              @id @default(autoincrement())
+  title              String
+  slug               String           @unique
+  excerpt            String
+  content            String           @db.Text
+  featuredImage      String?          @map("featured_image")
+  categoryId         Int?             @map("category_id")
+  status             String           @default("draft") // 'draft' | 'review' | 'published' | 'archived'
+  authorId           Int?             @map("author_id")
+  metaTitle          String?          @map("meta_title")
+  metaDescription    String?          @map("meta_description")
+  readingTimeMinutes Int              @default(5) @map("reading_time_minutes")
+  viewsCount         Int              @default(0) @map("views_count")
+  publishedAt        DateTime?        @map("published_at")
+  createdAt          DateTime         @default(now()) @map("created_at")
+  updatedAt          DateTime         @default(now()) @updatedAt @map("updated_at")
+
+  category           Category?        @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  author             User?            @relation(fields: [authorId], references: [id], onDelete: SetNull)
+  articleTopics      ArticleTopic[]
+  articleKeywords    ArticleKeyword[]
+
+  @@index([slug], map: "article_slug_idx")
+  @@index([status], map: "article_status_idx")
+  @@index([categoryId], map: "article_category_idx")
+  @@index([publishedAt], map: "article_published_at_idx")
+  @@map("articles")
+}
+
+// 7. M:N Article <-> Topic Linking
+model ArticleTopic {
+  id        Int     @id @default(autoincrement())
+  articleId Int     @map("article_id")
+  topicId   Int     @map("topic_id")
+  isPrimary Boolean @default(false) @map("is_primary")
+
+  article   Article @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  topic     Topic   @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  @@index([articleId], map: "article_topics_article_idx")
+  @@index([topicId], map: "article_topics_topic_idx")
+  @@map("article_topics")
+}
+
+// 8. M:N Article <-> Keyword Tagging
+model ArticleKeyword {
+  id        Int     @id @default(autoincrement())
+  articleId Int     @map("article_id")
+  keywordId Int     @map("keyword_id")
+
+  article   Article @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  keyword   Keyword @relation(fields: [keywordId], references: [id], onDelete: Cascade)
+
+  @@index([articleId], map: "article_keywords_article_idx")
+  @@index([keywordId], map: "article_keywords_keyword_idx")
+  @@map("article_keywords")
+}
+
+// 9. Ad Placements Registry
+model AdPlacement {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  code        String   @unique // 'HEADER' | 'ARTICLE_TOP' | 'ARTICLE_MIDDLE' | 'ARTICLE_BOTTOM' | 'SIDEBAR' | 'FOOTER' | 'MOBILE'
+  description String?
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@map("ad_placements")
+}
+
+// 10. Database-Driven Advertisements
+model Advertisement {
+  id             Int            @id @default(autoincrement())
+  title          String
+  imageUrl       String         @map("image_url")
+  destinationUrl String         @map("destination_url")
+  placement      String         // 'HEADER' | 'ARTICLE_TOP' | 'ARTICLE_MIDDLE' | 'ARTICLE_BOTTOM' | 'SIDEBAR' | 'FOOTER' | 'MOBILE'
+  isActive       Boolean        @default(true) @map("is_active")
+  priority       Int            @default(1)
+  startDate      DateTime?      @map("start_date")
+  endDate        DateTime?      @map("end_date")
+  impressions    Int            @default(0)
+  clicks         Int            @default(0)
+  createdAt      DateTime       @default(now()) @map("created_at")
+  updatedAt      DateTime       @default(now()) @updatedAt @map("updated_at")
+
+  impressionsList AdImpression[]
+  clicksList      AdClick[]
+
+  @@index([placement, isActive], map: "ad_placement_active_idx")
+  @@map("advertisements")
+}
+
+// 11. Ad Impressions Tracking
+model AdImpression {
+  id              Int           @id @default(autoincrement())
+  advertisementId Int           @map("advertisement_id")
+  placement       String
+  ipAddress       String?       @map("ip_address")
+  userAgent       String?       @map("user_agent")
+  createdAt       DateTime      @default(now()) @map("created_at")
+
+  advertisement   Advertisement @relation(fields: [advertisementId], references: [id], onDelete: Cascade)
+
+  @@index([advertisementId], map: "ad_imp_advertisement_idx")
+  @@index([createdAt], map: "ad_imp_created_at_idx")
+  @@map("ad_impressions")
+}
+
+// 12. Ad Clicks Tracking
+model AdClick {
+  id              Int           @id @default(autoincrement())
+  advertisementId Int           @map("advertisement_id")
+  placement       String
+  ipAddress       String?       @map("ip_address")
+  userAgent       String?       @map("user_agent")
+  createdAt       DateTime      @default(now()) @map("created_at")
+
+  advertisement   Advertisement @relation(fields: [advertisementId], references: [id], onDelete: Cascade)
+
+  @@index([advertisementId], map: "ad_clicks_advertisement_idx")
+  @@map("ad_clicks")
+}
+
+// 13. Media Library Assets
+model Media {
+  id           Int      @id @default(autoincrement())
+  fileName     String   @map("file_name")
+  fileUrl      String   @map("file_url")
+  mimeType     String?  @map("mime_type")
+  sizeBytes    Int?     @map("size_bytes")
+  altText      String?  @map("alt_text")
+  uploadedById Int?     @map("uploaded_by_id")
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  uploadedBy   User?    @relation(fields: [uploadedById], references: [id], onDelete: SetNull)
+
+  @@map("media")
+}
+
+// 14. Audit Logs
+model AuditLog {
+  id         Int      @id @default(autoincrement())
+  userId     Int?     @map("user_id")
+  action     String
+  entityType String   @map("entity_type")
+  entityId   String?  @map("entity_id")
+  details    String?
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([createdAt], map: "audit_logs_created_at_idx")
+  @@map("audit_logs")
+}
